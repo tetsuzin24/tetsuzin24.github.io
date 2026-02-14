@@ -4,48 +4,71 @@
   <meta charset="UTF-8">
   <title>My Site</title>
   <style>
-  nav {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 70px;
-  background-color: dimgray;
-  padding-top: 5px;
-  box-sizing: border-box;
-  z-index: 1000;
-}
-  ul{
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  li{
-    margin-right: 35px;
-  }
-  a{
-    display: block;
-    text-decoration: none;
-    color: white;
-    margin-right: 35px;
-  }
-  a:hover{
-    color: rgb(214, 237 ,248);
-  }
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      background-color: dimgray;
+      padding-top: 5px;
+      box-sizing: border-box;
+      z-index: 1000;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin-right: 35px;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      color: rgb(214, 237, 248);
+    }
+
+    /* セクションのスタイル */
+    section {
+      padding-top: 80px;
+      margin-top: -70px;
+      text-align: center;
+    }
+
+    img {
+      max-width: 80%;
+      height: auto;
+      margin-bottom: 20px;
+    }
   </style>
 </head>  
 <body>
   <nav>
     <ul>
-      <li><a href="#">HOME</a></li>
-      <li><a href="#">NEW ITEM</a></li>
+      <li><a href="#home">HOME</a></li>
+      <li><a href="#">ITEM</a></li>
       <li><a href="#">BLOG</a></li>
       <li><a href="#">POPUP</a></li>
       <li><a href="#">ACCESS</a></li>
     </ul>
-    <div style="height: 70px;"></div>
   </nav>
-</body>
 
+  <!-- ナビゲーションバーの高さ分の余白 -->
+  <div style="height: 70px;"></div>
+
+  <!-- HOMEセクション -->
+  <section id="home">
+    <h1>ようこそ、私たちの会社へ</h1>
+    <img src="images/company.jpg" alt="会社の外観">
+    <p>
+      私たちの会社は、自然と調和したライフスタイルを提案するブランドです。<br>
+      地元の素材を活かした商品づくりを大切にし、皆さまの暮らしに彩りを添えることを目指しています。
+    </p>
+  </section>
+</body>
 </html>
