@@ -7,47 +7,34 @@
   <!-- Font Awesomeの読み込み --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-  /* ナビゲーション全体のコンテナを左右に分ける */
-  .nav-container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 100%;
-    padding: 0 20px;
-    box-sizing: border-box;
-  }
-
-  /* 左側のメニュー */
-  .nav-left,
-  .nav-right {
-    display: flex;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-
-  /* メニュー項目の間隔 */
-  .nav-left li {
-    margin-right: 35px;
-  }
-
-  /* リンクのスタイル */
-  a {
-    display: block;
-    text-decoration: none;
-    color: white;
-    font-size: 18px;
-  }
-
-  a:hover {
-    color: rgb(214, 237, 248);
-  }
-
-  /* Instagramアイコンのサイズ調整 */
-  .nav-right i.fab {
-    font-size: 24px;
-  }
-
+    nav {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 70px;
+      background-color: dimgray;
+      padding-top: 5px;
+      box-sizing: border-box;
+      z-index: 1000;
+    }
+    ul {
+      display: flex;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+    li {
+      margin-right: 35px;
+    }
+    a {
+      display: block;
+      text-decoration: none;
+      color: white;
+    }
+    a:hover {
+      color: rgb(214, 237, 248);
+    }
     #access h2{
       text-align:center;
     }
@@ -99,10 +86,7 @@
       <li><a href="#access">ACCESS</a></li>
       <!-- Instagramアイコン --> 
     </ul> <ul class="nav-right"> 
-      <li> 
-        <a href="https://www.instagram.com/salt_used/" target="_blank" aria-label="Instagram"> 
-          <i class="fab fa-instagram"></i> 
-        </a> 
+      <li> <a href="https://www.instagram.com/salt_used/" target="_blank" aria-label="Instagram"> <i class="fab fa-instagram"></i> </a> 
       </li> 
     </ul>
   </nav>
