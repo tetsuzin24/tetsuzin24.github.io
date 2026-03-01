@@ -2,33 +2,32 @@
 <html>
 <head>
   <meta charset="UTF-8">
-  charset="UTF-8"> 
   <title>My Site</title> 
   <!-- Font Awesomeの読み込み --> <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
   <style>
-    nav {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 70px;
-      background-color: rgb(201, 6, 6);
-      padding-top: 5px;
-      box-sizing: border-box;
-      z-index: 1000;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    nav { 
+      display: flex; 
+      justify-content: space-between; 
+      align-items: center; 
+      background-color: rgb(201, 6, 6); 
+      height: 70px; 
+      padding: 0 20px; 
+      box-sizing: border-box; 
+      position: fixed; 
+      top: 0; 
+      left: 0; 
+      width: 100%; 
+      z-index: 1000; 
+    }
+    nav li { 
+      margin-right: 35px; 
     }
     nav ul { 
       display: flex; 
       list-style: none; 
       margin: 0; 
       padding: 0; 
-    } 
-    .nav-right { 
-      margin-left: auto; /* 右端に寄せる */ 
     } 
     .nav-right li { 
       margin-right: 0; /* 右側の余白は不要 */ 
@@ -46,6 +45,7 @@
       display: block;
       text-decoration: none;
       color: white;
+      font-size: 18px;
     }
     a:hover {
       color: rgb(192, 6, 6);
@@ -93,21 +93,24 @@
 </head>  
 <body>
   <nav>
-    <ul class="nav-left">
-      <li><a href="#about">HOME</a></li>
-      <li><a href="#about">お店について</a></li>
-      <li><a href="blog.html">BLOG</a></li> 
-      <li><a href="popup.html">POPUP</a></li>
-      <li><a href="#access">ACCESS</a></li>
-      <!-- Instagramアイコン --> 
-    </ul> 
-    <ul class="nav-right"> 
-      <li> 
-        <a href="https://www.instagram.com/salt_used/" target="_blank" aria-label="Instagram"> 
-          <i class="fab fa-instagram"></i> 
-        </a> 
-      </li> 
-    </ul>
+    <div class="nav-left">
+      <ul>
+        <li><a href="index.html#home">HOME</a></li>
+        <li><a href="index.html#about">お店について</a></li>
+        <li><a href="blog.html">BLOG</a></li>
+        <li><a href="popup.html">POPUP</a></li>
+        <li><a href="index.html#access">ACCESS</a></li>
+      </ul>
+    </div>
+    <div class="nav-right">
+      <ul class="nav-right"> 
+        <li> 
+          <a href="https://www.instagram.com/salt_used/" target="_blank" aria-label="Instagram"> 
+            <i class="fab fa-instagram"></i> 
+          </a> 
+        </li> 
+      </ul>
+    </div>
   </nav>
 
   <div style="height: 70px;"></div>
