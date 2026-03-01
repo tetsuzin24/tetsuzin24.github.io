@@ -17,6 +17,21 @@
       padding-top: 5px;
       box-sizing: border-box;
       z-index: 1000;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    nav ul { 
+      display: flex; 
+      list-style: none; 
+      margin: 0; 
+      padding: 0; 
+    } 
+    .nav-right { 
+      margin-left: auto; /* 右端に寄せる */ 
+    } 
+    .nav-right li { 
+      margin-right: 0; /* 右側の余白は不要 */ 
     }
     ul {
       display: flex;
@@ -78,7 +93,7 @@
 </head>  
 <body>
   <nav>
-    <ul>
+    <ul class="nav-left">
       <li><a href="#about">HOME</a></li>
       <li><a href="#about">お店について</a></li>
       <li><a href="blog.html">BLOG</a></li> 
@@ -87,7 +102,10 @@
       <!-- Instagramアイコン --> 
     </ul> 
     <ul class="nav-right"> 
-      <li> <a href="https://www.instagram.com/salt_used/" target="_blank" aria-label="Instagram"> <i class="fab fa-instagram"></i> </a> 
+      <li> 
+        <a href="https://www.instagram.com/salt_used/" target="_blank" aria-label="Instagram"> 
+          <i class="fab fa-instagram"></i> 
+        </a> 
       </li> 
     </ul>
   </nav>
